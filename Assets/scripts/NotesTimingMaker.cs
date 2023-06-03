@@ -43,7 +43,7 @@ public class NotesTimingMaker : MonoBehaviour
         {
             WriteNotesTiming(1);
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.G))
         {
             WriteNotesTiming(2);
         }
