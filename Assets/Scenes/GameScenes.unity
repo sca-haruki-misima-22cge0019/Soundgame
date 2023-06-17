@@ -304,18 +304,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128673059}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 715892739}
-  m_RootOrder: 1
+  m_Father: {fileID: 1532677631}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 350, y: 738.3406}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 223.2, y: -16.6}
   m_SizeDelta: {x: 184.0733, y: 558.3406}
-  m_Pivot: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &128673061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -614,9 +614,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1985449361}
-        m_TargetAssemblyTypeName: NotesTimingMaker, Assembly-CSharp
-        m_MethodName: StartMusic
+      - m_Target: {fileID: 906322219}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: Startgame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -676,9 +676,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 984961498}
-  - {fileID: 128673060}
   m_Father: {fileID: 1532677631}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -797,7 +796,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bedca2d0a2d97774e80eb5ec7e0e1418, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notes:
+  - {fileID: 484725928922872289, guid: f1ed9514b8880e9478af0cee8f100106, type: 3}
+  - {fileID: 852025525732133610, guid: 2f9a02f226215fe429ee415e6b784f99, type: 3}
+  - {fileID: 5544272010794266703, guid: b280c8e819c000f4d9f260da514ffd45, type: 3}
+  - {fileID: 1601759646879526121, guid: b9d5c95120dd5d24d9589e8918ae9b96, type: 3}
+  - {fileID: 4743724236488924609, guid: 16a078922bc9766438e61e27b3747c2c, type: 3}
   filePass: Sheetmusic
+  timeOffset: -1
+  startButton: {fileID: 715892735}
+  scoreText: {fileID: 128673061}
 --- !u!4 &906322220
 Transform:
   m_ObjectHideFlags: 0
@@ -921,6 +929,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 128673060}
   - {fileID: 715892739}
   m_Father: {fileID: 0}
   m_RootOrder: 1

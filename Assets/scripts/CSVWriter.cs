@@ -9,7 +9,7 @@ public class CSVWriter : MonoBehaviour
 
     void Start()
     {
-       WriteCSV("Hello,World");
+        /*WriteCSV("Hello,World");*/
     }
     public void WriteCSV(string txt)
     {

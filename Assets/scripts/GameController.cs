@@ -72,7 +72,9 @@ public class GameController : MonoBehaviour
             string[] values = line.Split(',');
             for (j = 0; j < values.Length; j++)
             {
+                //Debug.Log(values[0]);
                 _timing[i] = float.Parse(values[0]);
+                
                 _lineNum[i] = int.Parse(values[1]);
             }
             i++;
