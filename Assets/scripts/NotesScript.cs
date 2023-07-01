@@ -21,7 +21,7 @@ public class NotesScript : MonoBehaviour
 
         if (this.transform.position.y < -5.0f)
         {
-            Debug.Log("false");
+            Debug.Log("Miss");
             Destroy(this.gameObject);
         }
 
