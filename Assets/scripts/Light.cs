@@ -7,8 +7,7 @@ public class Light : MonoBehaviour
     [SerializeField] private float Speed = 3;
     [SerializeField] private int num = 0;
     private Renderer rend;
-    private float alfa = 0; 
-
+    private float alfa = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,56 +17,46 @@ public class Light : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if(!(rend.material.color.a <= 0))
+        if (!(rend.material.color.a <= 0))
         {
-            rend.material.color = new Color(rend.material.color.r, rend.material.color.g,
-                                              rend.material.color.b, alfa);
+            rend.material.color = new Color(rend.material.color.r, rend.material.color.r, rend.material.color.r, alfa);
         }
 
-        if(num == 0)
-        {
-            if(Input.GetKeyDown(KeyCode.D))
-            {
-                colorChenger();
-            }
-        }
         if (num == 1)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.D))
             {
-                colorChenger();
+                colorChange();
             }
         }
         if (num == 2)
         {
-            if (Input.GetKeyDown(KeyCode.G))
+            if (Input.GetKeyDown(KeyCode.F))
             {
-                colorChenger();
+                colorChange();
             }
         }
         if (num == 3)
         {
-            if (Input.GetKeyDown(KeyCode.H))
+            if (Input.GetKeyDown(KeyCode.J))
             {
-                colorChenger();
+                colorChange();
             }
         }
         if (num == 4)
         {
-            if (Input.GetKeyDown(KeyCode.J))
+            if (Input.GetKeyDown(KeyCode.K))
             {
-                colorChenger();
+                colorChange();
             }
         }
-        alfa -= Speed*Time.deltaTime;
+        alfa -= Speed * Time.deltaTime;
 
     }
 
-    void colorChenger()
+    void colorChange()
     {
         alfa = 0.3f;
-        rend.material.color = new Color(rend.material.color.r,rend.material.color.g,
-                                          rend.material.color.b,alfa);
+        rend.material.color = new Color(rend.material.color.r, rend.material.color.g, rend.material.color.b, alfa);
     }
 }
