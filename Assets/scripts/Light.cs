@@ -8,6 +8,7 @@ public class Light : MonoBehaviour
     [SerializeField] private int num = 0;
     private Renderer rend;
     private float alfa = 0;
+
     // Start is called before the first frame update
     void Start()
     {
